@@ -1,0 +1,67 @@
+<!-- 头部内容 -->
+<header class="navbar-fixed">
+    <nav id="headNav" class="bf-color none-shadow">
+        <div id="navContainer" class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <a href="{{@blog.url}}" class="waves-effect waves-light">
+                        {{#if @blog.logo}}
+                        <img src="{{@blog.logo}}" class="logo-img hide-on-small-only">
+                        {{else}}
+                        <span class="logo-span">{{@blog.title}}</span>
+                        {{/if}}
+                    </a>
+                </div>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+                <ul class="right">
+                    {{#foreach navigation}}
+                    <li class="hide-on-med-and-down">
+                        <a href="{{url absolute="true"}}" class="waves-effect waves-light">{{label}}</a>
+                    </li>
+                    {{/foreach}}
+                    <li>
+                        <a href="#!" id="toggle-search" class="waves-effect waves-light">
+                            <i id="searchIcon" class="mdi-action-search"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="side-nav" id="mobile-nav">
+                    <div class="mobile-head bf-color">
+                        <img src="assets/images/head_pic.jpg" class="logo-img circle responsive-img">
+                        <div class="logo-name">{{@blog.title}}</div>
+                        <div class="logo-desc">从来没有真正的绝境，只有心灵的迷途</div>
+                    </div>
+                    <ul class="menu-list">
+                        {{#foreach navigation}}
+                        <li>
+                            <a href="{{url absolute="true"}}" class="waves-effect waves-light">
+                                <i class="fa fa-home fa-lg fa-fw"></i>{{label}}
+                            </a>
+                        </li>
+                        {{/foreach}}
+                        <hr>
+                        <li>
+                            <a href="settings.html" class="waves-effect waves-light">
+                                <i class="fa fa-gear fa-lg fa-fw"></i>设 置
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social-link">
+                        <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+                            <i class="fa fa-github fa-lg"></i>
+                        </a>
+                        <a href="mailto:chenjiayin1990@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+                            <i class="fa fa-envelope fa-lg"></i>
+                        </a>
+                        <a href="#!" class="tooltipped" data-tooltip="QQ号：1181062873" data-position="top" data-delay="50">
+                            <i class="fa fa-qq fa-lg"></i>
+                        </a>
+                        <a href="#!" class="tooltipped" data-tooltip="RSS" target="_blank" data-position="top" data-delay="50">
+                            <i class="fa fa-rss fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

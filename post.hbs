@@ -1,0 +1,97 @@
+{{!< default}}
+
+{{! 主要内容}}
+<main class="content">
+    {{! 文章内容 }}
+    {{#post}}
+    {{! 头部融合背景标题}}
+    <div class="content-heading bf-color">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h2 class="heading">{{title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{! 文章内容详情}}
+    <div id="artDetail" class="container notice">
+        <div class="card">
+            <div class="card-content">
+                {{#if tags}}
+                <div class="article-tag">
+                    {{#foreach tags}}
+                    <a href="{{url}}" target="_blank"><span class="chip bf-color">{{name}}</span></a>
+                    {{/foreach}}
+                </div>
+                {{/if}}
+                <div class="author-info">
+                    <span>
+                        <a class="bf-text-gray">
+                            <i class="fa fa-calendar fa-fw"></i>{{date published_at format="MMMM DD YYYY"}}
+                        </a>
+                    </span>
+                    <span>
+                        {{#author}}
+                        <a href="#!" target="_blank" class="bf-text-gray">
+                            <i class="fa fa-user fa-fw"></i>{{name}}
+                        </a>
+                        {{/author}}
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content article-card-content">
+                <div id="articleContent">
+                    {{{content}}}
+                </div>
+                <hr />
+                <br />
+                <p>转载请注明：<a href="http://blinkfox.com" class="b-link-green">{{@blog.title}}</a> &raquo;
+                    <a href="{{url}}" class="b-link-green">{{title}}</a>
+                </p>
+                <div class="article-share">
+                    <div>分享到：</div>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style_24x24 jt-share">
+                        <a class="jiathis_button_qzone"></a>
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_tqq"></a>
+                        <a class="jiathis_button_weixin"></a>
+                        <a class="jiathis_button_renren"></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                    </div>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+        </div>
+
+        {{! 上一篇和下一篇的功能 }}
+        <div class="prenext-card card">
+            <div class="prenext-row row">
+                <div class="prenext col s12 m6 l6">
+                    {{#prev_post}}
+                    <p class="pn-title">上一篇</p>
+                    <div>
+                        <a href="{{url}}">{{title}}</a>
+                    </div>
+                    {{/prev_post}}
+                </div>
+                <div class="prenext col s12 m6 l6">
+                    {{#next_post}}
+                    <p class="pn-title">下一篇</p>
+                    <div>
+                        <a href="{{url}}">{{title}}</a>
+                    </div>
+                    {{/next_post}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/post}}
+</main>
+
+{{! 移动端分享的模态框}}
+{{> mobile_share}}

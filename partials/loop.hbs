@@ -1,0 +1,45 @@
+{{! 文章列表的循环 }}
+{{#foreach posts}}
+<div class="article col s12 m6 l4">
+    <div class="card">
+        <a href="{{url}}">
+            {{! 文章特色图 }}
+            <div class="card-image">
+                {{#if image}}
+                <img src="{{{image}}}" alt="{{{title}}}">
+                {{else}}
+                <img src="assets/images/default.jpg" alt="{{{title}}}">
+                {{/if}}
+                <span class="card-title">{{{title}}}</span>
+            </div>
+            <div class="card-content article-content">
+                <p>{{excerpt characters="120"}}</p>
+                <ul>
+                    <li>
+                        <a class="bf-text-gray">
+                            <i class="fa fa-calendar fa-fw"></i>{{date published_at timeago="true"}}
+                        </a>
+                    </li>
+                    <li>
+                        {{#author}}
+                        <a href="#!" target="_blank" class="bf-text-gray">
+                            <i class="fa fa-user fa-fw"></i>{{name}}
+                        </a>
+                        {{/author}}
+                    </li>
+                </ul>
+            </div>
+            {{! 文章标签 }}
+            <div class="card-action article-tags">
+            {{#if tags}}
+                {{#foreach tags}}
+                <a href="{{url}}" target="_blank">
+                    <span class="chip bf-color">{{name}}</span>
+                </a>
+                {{/foreach}}
+            {{/if}}
+            </div>
+        </a>
+    </div>
+</div>
+{{/foreach}}
