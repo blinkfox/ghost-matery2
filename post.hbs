@@ -34,7 +34,7 @@
                     </span>
                     <span>
                         {{#author}}
-                        <a href="#!" target="_blank" class="bf-text-gray">
+                        <a href="{{url}}" target="_blank" class="bf-text-gray">
                             <i class="fa fa-user fa-fw"></i>{{name}}
                         </a>
                         {{/author}}
@@ -72,14 +72,6 @@
         <div class="prenext-card card">
             <div class="prenext-row row">
                 <div class="prenext col s12 m6 l6">
-                    {{#prev_post}}
-                    <p class="pn-title">上一篇</p>
-                    <div>
-                        <a href="{{url}}">{{title}}</a>
-                    </div>
-                    {{/prev_post}}
-                </div>
-                <div class="prenext col s12 m6 l6">
                     {{#next_post}}
                     <p class="pn-title">下一篇</p>
                     <div>
@@ -87,11 +79,16 @@
                     </div>
                     {{/next_post}}
                 </div>
+                <div class="prenext col s12 m6 l6">
+                    {{#prev_post}}
+                    <p class="pn-title">上一篇</p>
+                    <div>
+                        <a href="{{url}}">{{title}}</a>
+                    </div>
+                    {{/prev_post}}
+                </div>
             </div>
         </div>
     </div>
     {{/post}}
 </main>
-
-{{! 移动端分享的模态框}}
-{{> mobile_share}}

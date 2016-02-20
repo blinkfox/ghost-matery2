@@ -56,7 +56,7 @@ p {
     line-height: 1.8rem;
 }
 hr {
-    margin: 20px 0;
+    margin: 12px 0;
     border: 0;
     border-top: 1px solid #999;
 }
@@ -67,7 +67,7 @@ blockquote {
     background-color: #f1f8e9;
 }
 code[class*="language-"], pre[class*="language-"] {
-    color: #32cd45;
+    color: #3f3;
 }
 b, strong {
     font-weight: bold;
@@ -167,7 +167,7 @@ header .side-nav .mobile-head img {
     height: 75px;
 }
 header .side-nav .mobile-head .logo-name {
-    margin-top: -25px;
+    margin-top: -5px;
     padding-left: 10px;
     font-size: 1.5rem;
 }
@@ -292,7 +292,7 @@ article .article-tags .chip {
     margin-right: 30px;
 }
 #artDetail .article-card-content {
-    padding: 5px 20px 20px;
+    padding: 0px 20px 20px;
 }
 #artDetail .article-share {
     margin-top: 10px;

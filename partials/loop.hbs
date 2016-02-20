@@ -6,11 +6,11 @@
             {{! 文章特色图 }}
             <div class="card-image">
                 {{#if image}}
-                <img src="{{{image}}}" alt="{{{title}}}">
+                <img src="{{image}}" alt="{{title}}">
                 {{else}}
-                <img src="assets/images/default.jpg" alt="{{{title}}}">
+                <img src="{{asset "images/default.jpg"}}" alt="{{title}}">
                 {{/if}}
-                <span class="card-title">{{{title}}}</span>
+                <span class="card-title">{{title}}</span>
             </div>
             <div class="card-content article-content">
                 <p>{{excerpt characters="120"}}</p>
@@ -22,7 +22,7 @@
                     </li>
                     <li>
                         {{#author}}
-                        <a href="#!" target="_blank" class="bf-text-gray">
+                        <a href="{{url}}" target="_blank" class="bf-text-gray">
                             <i class="fa fa-user fa-fw"></i>{{name}}
                         </a>
                         {{/author}}
