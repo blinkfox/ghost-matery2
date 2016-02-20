@@ -14,7 +14,7 @@
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 75%;
+        width: 80%;
     }
 }
 body {
@@ -102,6 +102,9 @@ mark {
 }
 .none-shadow {
     box-shadow: none;
+}
+.modal.bottom-sheet {
+    max-height: 65%;
 }
 
 /*各主题背景颜色和文字颜色样式*/
@@ -268,6 +271,12 @@ article .article-tags .chip {
 .paging i {
     font-size: 2.5rem;
 }
+.paging .disabled {
+    background-color: #ccc !important;
+}
+.paging .disabled i {
+    color: #999 !important;
+}
 
 /*文章详情样式*/
 #artDetail a {
@@ -413,6 +422,11 @@ footer .copy-right {
 }
 #theme-change .theme-change-container ul li.selected {
     outline: 2px solid black;
+}
+#themeModal .theme-settings div {
+    margin: 7px;
+    width: 72px;
+    height: 72px;
 }
 
 /*回到顶部按钮样式*/

@@ -6,6 +6,10 @@
             <a href="{{page_url prev}}" class="left btn-floating btn-large waves-effect waves-light bf-color">
                 <i class="fa fa-angle-left"></i>
             </a>
+            {{else}}
+            <a class="left btn-floating btn-large disabled">
+                <i class="fa fa-angle-left"></i>
+            </a>
             {{/if}}
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
@@ -13,7 +17,11 @@
         </div>
         <div class="col s6 m4 l4">
             {{#if next}}
-            <a href="#!" class="right btn-floating btn-large waves-effect waves-light bf-color">
+            <a href="{{page_url next}}" class="right btn-floating btn-large waves-effect waves-light bf-color">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            {{else}}
+            <a class="right btn-floating btn-large disabled">
                 <i class="fa fa-angle-right"></i>
             </a>
             {{/if}}

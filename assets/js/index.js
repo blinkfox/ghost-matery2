@@ -26,6 +26,13 @@ function replaceClass(color, c) {
     });
 }
 
+function changeTheme(t) {
+    var color = t.attr('data-colors');
+    replaceClass(color, 'bf-');
+    replaceClass(color, 'bf-text-');
+    setLocalTheme(color);
+}
+
 /*设置本地颜色到localStorage中*/
 function setLocalTheme(color) {
     if (color) {
@@ -59,14 +66,9 @@ function setArtWidth() {
 
 /*文章内容详情的一些初始化特性*/
 function articleInit() {
-    /*给文章详情内容图片增加light box特效和响应式的class样式*/
-    // $('#articleContent img').each(function() {
-    //     $(this).addClass('materialboxed').addClass('responsive-img');
-    // });
     $('#articleContent img').addClass('materialboxed').addClass('responsive-img');
     $('#articleContent a').attr('target', '_blank').addClass('bf-text-color');
     $('.materialboxed').materialbox();
-    $('.modal-trigger').leanModal();
 }
 
 $(function() {
@@ -105,14 +107,21 @@ $(function() {
     $('#theme-change .theme-change-handle').click(function() {
         openOrClosePanel();
     });
-    /*调色面板某颜色选中样式设置*/
+    /*移动端主题设置的显示开关*/
+    $('#themeHandle').click(function() {
+        $('#themeModal').openModal();
+        $('.button-collapse').sideNav('hide');
+    });
+    /*桌面端调色面板某颜色选中样式时的主题颜色设置*/
     $('#theme-change .theme-change-container ul li').click(function() {
         $(this).addClass('selected').siblings().removeClass('selected');
-        var color = $(this).attr('data-colors');
-        replaceClass(color, 'bf-');
-        replaceClass(color, 'bf-text-');
-        setLocalTheme(color);
+        changeTheme($(this));
         openOrClosePanel();
+    });
+    /*移动端调色面板某颜色选中样式时的主题颜色设置*/
+    $('#themeModal .theme-settings div').click(function() {
+        changeTheme($(this));
+        $('#themeModal').closeModal();
     });
 
     /*回到顶部*/
