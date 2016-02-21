@@ -69,6 +69,7 @@ function articleInit() {
     $('#articleContent img').addClass('materialboxed').addClass('responsive-img');
     $('#articleContent a').attr('target', '_blank').addClass('bf-text-color');
     $('.materialboxed').materialbox();
+    $('.modal-trigger').leanModal();
 }
 
 $(function() {

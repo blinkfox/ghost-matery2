@@ -166,17 +166,20 @@ mark {
 @media only screen and (max-width: 600px) {
     header nav .brand-logo {
         left: 80px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+}
+header nav .brand-span {
+    font-size: 1.45rem;
 }
 header .brand-logo .logo-img {
     height: 38px;
     vertical-align: middle;
 }
 header .button-collapse i {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 header .side-nav .mobile-head {
     padding: 0 15px;
@@ -226,9 +229,9 @@ header .go-back {
     height: 56px;
 }
 header .go-back i {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 200;
-    line-height: 1.7rem;
+    line-height: 56px;
 }
 
 /*内容头部样式*/
