@@ -72,20 +72,20 @@
         <div class="prenext-card card">
             <div class="prenext-row row">
                 <div class="prenext col s12 m6 l6">
-                    {{#next_post}}
-                    <p class="pn-title">下一篇</p>
-                    <div>
-                        <a href="{{url}}">{{title}}</a>
-                    </div>
-                    {{/next_post}}
-                </div>
-                <div class="prenext col s12 m6 l6">
                     {{#prev_post}}
                     <p class="pn-title">上一篇</p>
                     <div>
                         <a href="{{url}}">{{title}}</a>
                     </div>
                     {{/prev_post}}
+                </div>
+                <div class="prenext col s12 m6 l6">
+                    {{#next_post}}
+                    <p class="pn-title">下一篇</p>
+                    <div>
+                        <a href="{{url}}">{{title}}</a>
+                    </div>
+                    {{/next_post}}
                 </div>
             </div>
         </div>
