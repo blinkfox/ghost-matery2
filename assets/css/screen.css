@@ -66,8 +66,25 @@ blockquote {
     color: #666;
     background-color: #f1f8e9;
 }
+pre {
+    padding: 1em;
+    margin: .5em 0;
+    background: #272822;
+    overflow: auto;
+    border-radius: 0.3em;
+    tab-size: 4;
+}
+code {
+    padding: 0.1rem 0.3rem;
+    background-color: #ddd;
+    border-radius: 3px;
+}
+pre code {
+    color: #32cd45;
+    background-color: #272822;
+}
 code[class*="language-"], pre[class*="language-"] {
-    color: #3f3;
+    color: #32cd45;
 }
 b, strong {
     font-weight: bold;
