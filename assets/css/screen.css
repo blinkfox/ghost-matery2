@@ -24,17 +24,17 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    line-height: 4.0rem;
+    line-height: 3.8rem;
 }
 h2 {
     font-size: 2.0rem;
     font-weight: bold;
-    line-height: 3.6rem;
+    line-height: 3.2rem;
 }
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    line-height: 3.0rem;
+    line-height: 2.5rem;
 }
 h4 {
     font-size: 1.3rem;
@@ -76,7 +76,7 @@ pre {
 }
 code {
     padding: 0.1rem 0.3rem;
-    background-color: #ddd;
+    background-color: #e0e0e0;
     border-radius: 3px;
 }
 pre code {
@@ -225,6 +225,8 @@ header .side-nav .social-link {
 header .go-back {
     float: left;
     position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
     z-index: 1;
     height: 56px;
 }
