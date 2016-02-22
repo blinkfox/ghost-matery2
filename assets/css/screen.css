@@ -166,6 +166,7 @@ mark {
 @media only screen and (max-width: 600px) {
     header nav .brand-logo {
         left: 80px;
+        width: 100px;
         font-size: 1.6rem;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
