@@ -25,7 +25,13 @@
         <img src="{{asset "images/head_pic.jpg"}}" class="logo-img circle responsive-img">
         {{/if}}
         <div class="logo-name">{{@blog.title}}</div>
-        <div class="logo-desc">从来没有真正的绝境，只有心灵的迷途</div>
+        <div class="logo-desc">
+            {{#if @blog.description}}
+                {{@blog.description}}
+            {{else}}
+                从来没有真正的绝境，只有心灵的迷途
+            {{/if}}
+        </div>
     </div>
     <ul class="menu-list">
         {{#if @blog.navigation}}
