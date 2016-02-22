@@ -79,6 +79,13 @@ $(function() {
     /*初始化主题*/
     initTheme();
 
+    /*silider初始化*/
+    $('.slider').slider({
+        height: 230,
+        interval: 5000
+    });
+    $('#featureSlider .slider').height(260);
+
     setArtWidth();
     /*调整屏幕宽度时重新设置文章列的宽度，修复小间距问题*/
     $(window).resize(function() {

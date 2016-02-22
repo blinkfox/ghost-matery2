@@ -250,6 +250,17 @@ header .go-back i {
     margin-top: -10px;
 }
 
+/*精选文章样式*/
+#featureSlider .card {
+    padding-bottom: 10px;
+}
+.slider .slides li .caption {
+    top: auto;
+    bottom: 1%;
+    left: 5%;
+    width: 95%
+}
+
 /*文章列表卡片各样式*/
 article a {
     margin-right: 0px !important;

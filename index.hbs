@@ -30,9 +30,13 @@
         </div>
     </div>
 
+    {{! 精选的3篇文章}}
+    {{> featured}}
+
     {{! 所有文章卡片}}
     <article id="articles" class="container articles">
         <div class="row article-row">
+            {{! 循环文章列表}}
             {{> loop}}
         </div>
     </article>

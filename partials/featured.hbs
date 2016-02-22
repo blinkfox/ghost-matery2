@@ -1,0 +1,25 @@
+{{! 精选3条文章的列表循环 }}
+{{#get "posts" filter="featured:true" limit="4" as |featured|}}
+<div id="featureSlider" class="container">
+    <div class="card">
+        <div class="slider">
+            <ul class="slides">
+                {{#foreach featured}}
+                <li>
+                    <a href="{{url}}">
+                        {{#if image}}
+                        <img src="{{image}}" class="responsive-img" alt="{{title}}">
+                        {{else}}
+                        <img src="{{asset "images/default.jpg"}}" class="responsive-img" alt="{{title}}">
+                        {{/if}}
+                        <div class="caption left-align">
+                            <h2>{{title}}</h2>
+                        </div>
+                    </a>
+                </li>
+                {{/foreach}}
+            </ul>
+        </div>
+    </div>
+</div>
+{{/get}}
