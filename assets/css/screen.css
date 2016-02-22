@@ -176,8 +176,9 @@ header nav .brand-span {
     font-size: 1.45rem;
 }
 header .brand-logo .logo-img {
-    height: 38px;
+    height: 40px;
     vertical-align: middle;
+    padding-bottom: 6px;
 }
 header .button-collapse i {
     font-size: 1.5rem;

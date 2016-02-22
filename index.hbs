@@ -11,7 +11,13 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <h3 class="heading">{{@blog.description}}</h3>
+                    <h3 class="heading">
+                        {{#if @blog.description}}
+                            {{@blog.description}}
+                        {{else}}
+                            从来没有真正的绝境，只有心灵的迷途
+                        {{/if}}
+                    </h3>
                 </div>
             </div>
         </div>
@@ -30,8 +36,9 @@
         </div>
     </div>
 
-    {{! 精选的3篇文章}}
-    {{> featured}}
+    {{! 精选的3篇文章,次功能为beta测试功能,需要在后台>实验功能>启用测试功能，选中“开放 API”才可开启}}
+    {{! 由于是测试功能，先暂时默认不开启，注释掉}}
+    {{!> featured}}
 
     {{! 所有文章卡片}}
     <article id="articles" class="container articles">
