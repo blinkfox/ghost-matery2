@@ -171,6 +171,9 @@ mark {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+    header .brand-logo .logo-span {
+        font-size: 1.6rem !important;
+    }
 }
 header nav .brand-span {
     font-size: 1.45rem;
@@ -179,6 +182,9 @@ header .brand-logo .logo-img {
     height: 40px;
     vertical-align: middle;
     padding-bottom: 6px;
+}
+header .brand-logo .logo-span {
+    font-size: 2rem;
 }
 header .button-collapse i {
     font-size: 1.5rem;
