@@ -58,6 +58,10 @@
 
 网页底部的版权信息如果你想改成自己的版权相关信息，也是在`partials/footer.hbs`文件夹中修改。
 
+#### 4、修改默认主题颜色
+
+网页的默认主题颜色是蓝色(`#3f51b5`)，如果你想修改成你喜欢的默认主题颜色，你可以去`assets/css/screen.css`中找到`.bf-color`和`.bf-text-color`两处修改其颜色值即可,你可以去这个[网站][12]寻找你喜欢的颜色。
+
 ### 祝你好运
 
 祝你使用本主题写博客更舒心。本主题也必然有些不足之处，生命不息，折腾不止，如果有更好的设计和建议，我也会尽量抽出时间来完善，如果您发现了什么bug,可以给我发邮件给我。如果您觉得这个主题还不错的话，欢迎在github里star下以示支持，再次感谢。
@@ -74,3 +78,4 @@
   [9]: http://static.blinkfox.com/matery2_5.jpg
   [10]: https://github.com/blinkfox/ghost-matery2
   [11]: http://fontawesome.io/
+  [12]: http://www.materialui.co/flatuicolors
