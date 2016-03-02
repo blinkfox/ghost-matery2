@@ -75,8 +75,9 @@ pre {
     tab-size: 4;
 }
 code {
-    padding: 0.1rem 0.3rem;
+    font-size: 96%;
     background-color: #e0e0e0;
+    color: #333;
     border-radius: 3px;
 }
 pre code {
