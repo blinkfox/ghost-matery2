@@ -228,7 +228,7 @@ header .side-nav .social-link {
     padding-left: 10px;
 }
 .social-link a {
-    display: initial;
+    display: inline;
     padding: 0 12px;
 }
 header .go-back {
