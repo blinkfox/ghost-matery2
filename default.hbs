@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link type="image/png" rel="shortcut icon" href="{{asset "images/favicon.png"}}">
-    <!-- <link type="text/css" rel="stylesheet" href="{{assets/plugins/awesome/css/font-awesome.min.css}}" /> -->
-    <link type="text/css" rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    {{!-- <link type="text/css" rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"> --}}
+    <link type="text/css" rel="stylesheet" href="{{asset "plugins/awesome/css/font-awesome.min.css"}}" />
     {{! import styles }}
     <link type="text/css" rel="stylesheet" href="{{asset "plugins/materialize/css/materialize.min.css"}}" />
     <link type="text/css" rel="stylesheet" href="{{asset "plugins/prism/prism.css"}}" />
@@ -45,7 +45,8 @@
     {{ghost_foot}}
 
     {{! import jQuery before materialize.min.js }}
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    {{!-- <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script> --}}
+    <script type="text/javascript" src="{{asset "plugins/jquery/jquery-2.2.0.min.js"}}"></script>
     <script>window.jQuery || document.write('<script src="{{asset "plugins/jquery/jquery-2.2.0.min.js"}}"><\/script>')</script>
     <script type="text/javascript" src="{{asset "plugins/materialize/js/materialize.min.js"}}"></script>
     <!-- <script type="text/javascript" src="http://cdn.bootcss.com/masonry/4.0.0/masonry.pkgd.min.js"></script> -->
