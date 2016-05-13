@@ -363,6 +363,21 @@ article .article-tags .chip {
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
+#articleContent ol, ul {
+    display: block;
+    padding-left: 2em;
+}
+#articleContent ul li, ol li {
+    display: list-item;
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+#articleContent ul li {
+    list-style-type: disc;
+}
+#articleContent ul ul li {
+    list-style-type: circle;
+}
 
 /*尾部样式*/
 footer {
