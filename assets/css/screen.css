@@ -343,7 +343,12 @@ article .article-tags .chip {
     margin-right: 30px;
 }
 #artDetail .article-card-content {
-    padding: 0px 20px 20px 25px;
+    padding: 0px 15px 20px 18px;
+}
+@media only screen and (min-width: 600px) {
+    #artDetail .article-card-content {
+		padding: 0px 30px 20px 35px;
+	}
 }
 #artDetail .article-share {
     margin-top: 10px;
