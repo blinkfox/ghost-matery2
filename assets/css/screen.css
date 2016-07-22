@@ -67,7 +67,7 @@ blockquote {
     background-color: #f1f8e9;
 }
 pre {
-    padding: 1em;
+    padding: 1.2em;
     margin: .5em 0;
     background: #272822;
     overflow: auto;
@@ -81,11 +81,15 @@ code {
     border-radius: 3px;
 }
 pre code {
-    color: #32cd45;
+    color: #e8eaf6;
     background-color: #272822;
 }
+pre[class*="language-"] {
+    padding: 1.2em;
+    margin: .5em 0;
+}
 code[class*="language-"], pre[class*="language-"] {
-    color: #32cd45;
+    color: #e8eaf6;
 }
 b, strong {
     font-weight: bold;
