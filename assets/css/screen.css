@@ -22,38 +22,37 @@ body {
     margin: 0;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 3.8rem;
+    line-height: 2.2rem;
 }
 h2 {
-    font-size: 2.0rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    line-height: 3.2rem;
+    line-height: 1.9rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    line-height: 2.5rem;
+    line-height: 1.7rem;
 }
 h4 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 2.0rem;
-}
-h5 {
     font-size: 1.2rem;
     font-weight: bold;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
+}
+h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.4rem;
 }
 h6 {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
 }
 p {
-    font-size: 1.05rem;
-    margin: 0 0 10px;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 hr {
     margin: 12px 0;
@@ -62,8 +61,8 @@ hr {
 }
 blockquote {
     border-left: 5px solid #27ae60;
-    padding: 1.2rem 1rem 1.2rem 1.5rem;
-    color: #666;
+    padding: 0.9rem 0.8rem 0.4rem 0.8rem;
+    color: #777;
     background-color: #f1f8e9;
 }
 pre {
@@ -75,9 +74,10 @@ pre {
     tab-size: 4;
 }
 code {
-    font-size: 96%;
-    background-color: #e0e0e0;
-    color: #333;
+    padding: 1px 4px;
+    font-size: 0.92rem;
+    color: #c0341d;
+    background-color: #fcefed;
     border-radius: 3px;
 }
 pre code {
@@ -327,7 +327,6 @@ article .article-tags .chip {
 /*文章详情样式*/
 #artDetail a {
     margin-right: 0px !important;
-    color: #4078c0;
     text-transform: none !important;
 }
 #artDetail .article-tag {
@@ -372,14 +371,24 @@ article .article-tags .chip {
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
+#articleContent p {
+    margin: 2 2 10px;
+    text-indent: 2.2rem;
+}
+#articleContent blockquote p {
+    text-indent: 0.2rem;
+}
+#articleContent a {
+    color: #1b69b6 !important;
+}
 #articleContent ol, ul {
     display: block;
     padding-left: 2em;
 }
 #articleContent ul li, ol li {
     display: list-item;
-    line-height: 25px;
-    font-size: 1.1rem;
+    line-height: 1.74rem;
+    font-size: 1rem;
 }
 #articleContent ul li {
     list-style-type: disc;
