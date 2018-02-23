@@ -7,8 +7,8 @@
                 {{#foreach featured}}
                 <li>
                     <a href="{{url}}">
-                        {{#if image}}
-                        <img src="{{image}}" class="responsive-img" alt="{{title}}">
+                        {{#if feature_image}}
+                        <img src="{{feature_image}}" class="responsive-img" alt="{{title}}">
                         {{else}}
                         <img src="{{asset "images/default.jpg"}}" class="responsive-img" alt="{{title}}">
                         {{/if}}

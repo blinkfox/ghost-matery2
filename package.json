@@ -1,4 +1,36 @@
 {
-  "name": "matery2",
-  "version": "1.0.0"
+    "name": "ghost-matery2",
+    "description": "This is another beautiful ghost blog theme with Material Design and Responsive Design.",
+    "version": "1.1.0",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "blinkfox",
+        "email": "chenjiayin1990@163.com",
+        "url": "http://blinkfox.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Material Design",
+            "Responsive Design",
+            "Waterfall flow",
+            "Personal Blogs"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "ghost-matery2",
+        "theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blinkfox/ghost-matery2"
+    },
+    "bugs": "https://github.com/blinkfox/ghost-matery2/issues",
+    "config": {
+        "posts_per_page": 6
+    }
 }

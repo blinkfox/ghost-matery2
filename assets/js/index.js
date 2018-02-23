@@ -99,6 +99,11 @@ $(function() {
         itemSelector: '.article'
     });
 
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        delay: 50
+    });
+
     /*初始化文章内容的一些显示特性*/
     articleInit();
 
